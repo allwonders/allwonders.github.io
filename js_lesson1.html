@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>JavaScript Lesson 1</title>
+    <!--<link rel="stylesheet" href="stylesheets/styles.css">-->
+    <!--<link rel="stylesheet" href="stylesheets/pygment_trac.css">-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>-->
+    <!--<script src="javascripts/main.js"></script>-->
+    <!--&lt;!&ndash;[if lt IE 9]>-->
+    <!--<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>-->
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 </head>
 <body>
+<header>
+    <h1>Lesson 1</h1>
+
+    <p></p>
+</header>
+
+<div class="wrapper">
+    <p id="out"></p>
+</div>
+
 <script type="text/javascript">
 
-    var person={fname:"Гарри",lname:"Поттер",age:15,sex:"Male"};
+    var person = {fname: "Гарри", lname: "Поттер", age: 15, sex: "Male"};
 
-    for (x in person)
-    {
-        document.write(person[x] + " ");
+    for (x in person) {
+        document.getElementById("out").innerHTML += person[x] + ", ";
     }
 
 </script>
+
 </body>
 </html>
